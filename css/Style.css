@@ -4,6 +4,61 @@ body{
     font-family: 'GlacialIndifferenceRegular'; 
 }
 
+
+/*Loading page*/
+
+.loader-container{
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(31, 52, 71);
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.loader-container.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-container h1{
+  position: absolute;
+  top: 28%;
+  left:39%;
+  color: white;
+  text-shadow: 2px 2px 2px rgb(119, 162, 255);
+}
+
+.loader-container h2{
+  position: absolute;
+  top: 60%;
+  left:44.5%;
+  color: white;
+  text-shadow: 2px 2px 2px rgb(119, 162, 255);
+}
+
+.loader{
+  width: 120px;
+  height: 120px;
+  border: 16px solid rgb(54, 88, 121);
+  border-top: 16px solid rgb(44, 110, 231);
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px black;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: loader 1s linear infinite;
+}
+
+@keyframes loader{
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -439,6 +494,267 @@ div.cv div.language-skill-content ul{
 div.cv div.language-skill-content ul li{
   border-bottom: 1px solid rgb(15, 77, 131);
 }
+
+/* CSS de la partie project*/
+
+div.contentProject{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+div.project h1{
+  text-align: center;
+  color : rgb(163, 204, 241);
+  margin-top: 100px;
+}
+
+/*Projet coop css*/
+
+div.contentProject div.project-coop{
+  background-color: rgba(132, 198, 255, 0.08);
+  width: 80%;
+  margin: auto;
+}
+
+div.contentProject div.project-coop h1{
+  text-align: center;
+  color : rgb(163, 204, 241);
+}
+
+div.contentProject div.project-coop h1{
+  text-align: center;
+  color : rgb(163, 204, 241);
+}
+
+div.contentProject div.project-coop a{
+  margin-left:40%;
+  color : rgb(163, 204, 241);
+}
+
+div.contentProject div.project-coop div.resume-coop {
+  margin-top: 60%;
+}
+
+div.contentProject div.project-coop h4{
+  text-align: center;
+  color : rgb(163, 204, 241);
+  border-bottom: solid rgb(127, 161, 255) 1px;
+}
+
+div.contentProject div.project-coop p{
+  color : rgb(163, 204, 241);
+  margin-left: 8px;
+}
+
+div.contentProject div.project-coop ul.coop {
+  top: 50%;
+  width: 1px;
+  height: 200px; 
+  display: flex;
+}
+
+div.contentProject div.project-coop ul.coop > li {
+  width: 25%;
+  list-style-type: none;
+  top: 0;
+  opacity: 0;
+  text-align: center;
+  transition: 1s opacity; 
+}
+
+div.contentProject div.project-coop .carousel{
+  position: relative;
+}
+
+div.contentProject div.project-coop img.coop {
+  position: absolute;
+  width: 90%;
+  top: 0;
+  opacity: 0;
+  transition: 1s opacity; 
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+div.contentProject div.project-coop img.active {
+  opacity: 1;
+}
+
+/*Css de la partie project de l'atelier*/
+
+div.contentProject div.project-atelier1{
+  background-color: rgba(132, 198, 255, 0.08);
+  width: 80%;
+  margin: auto;
+}
+
+div.contentProject div.project-atelier1 h1{
+  text-align: center;
+  color : rgb(163, 204, 241);
+}
+
+div.contentProject div.project-atelier1 a{
+  margin-left:37%;
+  color : rgb(163, 204, 241);
+}
+
+div.contentProject div.project-atelier1 h1{
+  text-align: center;
+  color : rgb(163, 204, 241);
+}
+
+div.contentProject div.project-atelier1 div.resume-atelier1 {
+  margin-top: 60%;
+}
+
+div.contentProject div.project-atelier1 h4{
+  text-align: center;
+  color : rgb(163, 204, 241);
+  border-bottom: solid rgb(127, 161, 255) 1px;
+}
+
+div.contentProject div.project-atelier1 p{
+  color : rgb(163, 204, 241);
+  margin-left: 8px;
+}
+
+div.contentProject div.project-atelier1 .carousel{
+  position: relative;
+}
+
+div.contentProject div.project-atelier1 img.test {
+  position: absolute;
+  width: 90%;
+  top: 0;
+  opacity: 0;
+  transition: 1s opacity; 
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+
+div.contentProject div.project-atelier1 img.active {
+  opacity: 1;
+}
+
+
+/*Css de la partie project covid*/
+
+div.contentProject div.project-covid{
+  background-color: rgba(132, 198, 255, 0.08);
+  width: 80%;
+  margin: auto;
+  margin-top:100px
+}
+
+div.contentProject div.project-covid h1{
+  text-align: center;
+  color : rgb(163, 204, 241);
+}
+
+div.contentProject div.project-covid a{
+  margin-left:33%;
+  color : rgb(163, 204, 241);
+}
+
+div.contentProject div.project-covid h1{
+  text-align: center;
+  color : rgb(163, 204, 241);
+}
+
+div.contentProject div.project-covid div.resume-covid {
+  margin-top: 60%;
+}
+
+div.contentProject div.project-covid h4{
+  text-align: center;
+  color : rgb(163, 204, 241);
+  border-bottom: solid rgb(127, 161, 255) 1px;
+}
+
+div.contentProject div.project-covid p{
+  color : rgb(163, 204, 241);
+  margin-left: 8px;
+}
+
+div.contentProject div.project-covid .carousel{
+  position: relative;
+}
+
+div.contentProject div.project-covid img.covid {
+  position: absolute;
+  width: 90%;
+  top: 0;
+  opacity: 0;
+  transition: 1s opacity; 
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+
+div.contentProject div.project-covid img.active {
+  opacity: 1;
+}
+
+
+/*Css de la partie project velo*/
+
+div.contentProject div.project-velo{
+  background-color: rgba(132, 198, 255, 0.08);
+  width: 80%;
+  margin: auto;
+  margin-top:100px
+}
+
+div.contentProject div.project-velo h1{
+  text-align: center;
+  color : rgb(163, 204, 241);
+}
+
+div.contentProject div.project-velo a{
+  margin-left:35%;
+  color : rgb(163, 204, 241);
+}
+
+div.contentProject div.project-velo h1{
+  text-align: center;
+  color : rgb(163, 204, 241);
+}
+
+div.contentProject div.project-velo div.resume-velo {
+  margin-top: 60%;
+}
+
+div.contentProject div.project-velo h4{
+  text-align: center;
+  color : rgb(163, 204, 241);
+  border-bottom: solid rgb(127, 161, 255) 1px;
+}
+
+div.contentProject div.project-velo p{
+  color : rgb(163, 204, 241);
+  margin-left: 8px;
+}
+
+div.contentProject div.project-velo .carousel{
+  position: relative;
+}
+
+div.contentProject div.project-velo img.velo {
+  position: absolute;
+  width: 90%;
+  top: 0;
+  opacity: 0;
+  transition: 1s opacity; 
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+
+div.contentProject div.project-velo img.active {
+  opacity: 1;
+}
+
+
 
 
   
