@@ -59,6 +59,8 @@ body{
   }
 }
 
+/*nav bar*/
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -71,7 +73,7 @@ nav ul {
   }
 
   nav ul li:first-child {
-    margin-left: 40%;
+    margin-left: 37%;
   }
   
   nav ul li {
@@ -93,6 +95,8 @@ nav ul {
   nav .active {
     background-color: rgb(60, 98, 133);
   }
+
+  /*hero banner*/
 
   div.banner{
       width: 100%;
@@ -137,7 +141,7 @@ nav ul {
     position: absolute;
     left: 50%;
     width: 100%;
-    top: 50%;
+    top: 55%;
     display: block;
     border: 15px solid red;
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
@@ -155,6 +159,8 @@ nav ul {
     box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
     border-radius: 20%;
   }
+
+  /*Profssional profile */
 
   div.professional-profile{
       
@@ -207,6 +213,8 @@ div.professional-profile .information p:last-of-type{
     transform: translateY(0);
     transition: 1s;
 }
+
+/*CV*/
 
 div.cv{
   width: 50%;
