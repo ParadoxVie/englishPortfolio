@@ -23,22 +23,6 @@ body{
   visibility: hidden;
 }
 
-.loader-container h1{
-  position: absolute;
-  top: 28%;
-  left:39%;
-  color: white;
-  text-shadow: 2px 2px 2px rgb(119, 162, 255);
-}
-
-.loader-container h2{
-  position: absolute;
-  top: 60%;
-  left:44.5%;
-  color: white;
-  text-shadow: 2px 2px 2px rgb(119, 162, 255);
-}
-
 .loader{
   width: 120px;
   height: 120px;
@@ -533,8 +517,8 @@ div.contentProject div.project-coop h1{
   color : rgb(163, 204, 241);
 }
 
-div.contentProject div.project-coop a{
-  margin-left:40%;
+div.contentProject div.project-coop a p{
+  text-align: center;
   color : rgb(163, 204, 241);
 }
 
@@ -600,8 +584,8 @@ div.contentProject div.project-atelier1 h1{
   color : rgb(163, 204, 241);
 }
 
-div.contentProject div.project-atelier1 a{
-  margin-left:37%;
+div.contentProject div.project-atelier1 a p{
+  text-align: center;
   color : rgb(163, 204, 241);
 }
 
@@ -659,8 +643,8 @@ div.contentProject div.project-covid h1{
   color : rgb(163, 204, 241);
 }
 
-div.contentProject div.project-covid a{
-  margin-left:33%;
+div.contentProject div.project-covid a p{
+  text-align: center;
   color : rgb(163, 204, 241);
 }
 
@@ -718,8 +702,8 @@ div.contentProject div.project-velo h1{
   color : rgb(163, 204, 241);
 }
 
-div.contentProject div.project-velo a{
-  margin-left:35%;
+div.contentProject div.project-velo a p{
+  text-align: center;
   color : rgb(163, 204, 241);
 }
 
@@ -760,6 +744,47 @@ div.contentProject div.project-velo img.velo {
 
 div.contentProject div.project-velo img.active {
   opacity: 1;
+}
+
+/* CSS pour la partie video*/
+
+div.video h1{
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(163, 204, 241);
+}
+
+div.video div.content-video{
+  margin: auto;
+  width: 40%;
+}
+
+div.video div.content-video h1{
+  color: rgb(163, 204, 241);
+  text-align: center;
+}
+
+div.video div.video-player iframe{
+  display: block;
+  margin: auto;
+}
+
+/*Footer*/
+
+footer{
+  background-color: rgb(22, 39, 54);
+  margin-top: 50px;
+  height: 100px;
+}
+
+footer h1{
+  color: rgb(163, 204, 241);
+  text-align: center;
+}
+
+footer p{
+  text-align: center;
+  color: rgb(163, 204, 241);
 }
 
 
